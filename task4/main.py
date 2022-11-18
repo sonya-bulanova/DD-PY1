@@ -11,7 +11,7 @@ def csv_to_list_dict(filename, delimiter=',', new_line='\n') -> list[dict]:
             ls.append(line.split(delimiter))
     for i in range(1, len(ls)):
         ls[i] = dict(zip(ls[0], ls[i]))
-    fw = open("output.txt")
+    #fw = open("output.txt")
     return ls
 
     # TODO реализовать конвертер из csv в json
